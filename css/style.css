@@ -64,6 +64,25 @@
   background-color:lightskyblue;
 }
 
+.debug footer{
+  background-color: black;
+}
+
+.debug .footer-top{
+  height: 600px;
+  border-bottom: 2px solid white;
+}
+
+.debug .footer-bottom{
+  height: 100px;
+  background-color: lightgreen;
+}
+
+.debug footer #logo,
+.debug footer .subscribe{
+  background-color: blueviolet;
+}
+
 
 
 /* regole css */
@@ -81,7 +100,6 @@
 
 .menu{
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
@@ -129,4 +147,28 @@ main section{
 
 .section2 .flex-section{
   flex-direction: row-reverse;
+}
+
+/* footer */
+
+.footer-top,
+.footer-bottom{
+  display: flex;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.column1{
+  background-color: purple;
+  width: 30%;
+}
+
+.column2{
+ background-color: aqua;
+ width: calc(70% / 4);
+}
+
+.footer-bottom{
+  justify-content: space-between;
+  align-items: center;
 }
