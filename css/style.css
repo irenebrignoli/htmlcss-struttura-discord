@@ -3,3 +3,60 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/* debug */
+
+.debug .header-top{
+  height: 100px;
+  background-color: lightblue;
+}
+
+.debug .header-bottom{
+  height: 400px;
+  background-color: blue;
+}
+
+.debug .menu{
+  height: 100%;
+  background-color:  beige;
+}
+
+.debug .container *{
+  border: 1px dashed black;
+}
+
+.debug .intro-box{
+  height: 100%;
+  background-color: pink;
+}
+
+main section{
+  height: 400px;
+}
+
+/* regole css */
+
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header-top{
+  padding: 10px;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-bottom{
+  text-align: center;
+  padding: 40px;
+}
+
+.intro-box{
+  max-width: 900px;
+  margin: 0 auto;
+}
