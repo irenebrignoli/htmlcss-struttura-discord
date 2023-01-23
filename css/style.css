@@ -6,6 +6,10 @@
 
 /* debug */
 
+.debug .container *{
+  border: 2px dashed black;
+}
+
 .debug .header-top{
   height: 100px;
   background-color: lightblue;
@@ -21,20 +25,50 @@
   background-color:  beige;
 }
 
-.debug .container *{
-  border: 1px dashed black;
-}
-
 .debug .intro-box{
   height: 100%;
+  background-color: palevioletred;
+}
+
+.debug main section{
+  height: 450px;
+}
+
+.debug .section3{
+  height: 700px;
+}
+
+.debug .section1{
+  background-color: #fff;
+}
+
+.debug .section2,
+.debug .section3{
+  background-color: lightgray;
+}
+
+.debug .flex-section,
+.debug .normal-section{
+  height: 100%;
+}
+
+.debug .normal-section{
+  background-color: green;
+}
+
+.debug .image{
   background-color: pink;
 }
 
-main section{
-  height: 400px;
+.debug .info-text{
+  background-color:lightskyblue;
 }
 
+
+
 /* regole css */
+
+/* header */
 
 .container{
   max-width: 1170px;
@@ -49,14 +83,50 @@ main section{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
+}
+
+.menu #logo{
+  width: 20%;
+}
+
+.menu nav{
+  width: 60%;
+  text-align: center;
+}
+
+.menu .login{
+  width: 20%;
+  text-align: right;
 }
 
 .header-bottom{
-  text-align: center;
   padding: 40px;
 }
 
 .intro-box{
   max-width: 900px;
   margin: 0 auto;
+}
+
+/* main */
+
+main section{
+  padding: 40px;
+}
+
+.flex-section{
+  display: flex;
+}
+
+.image{
+  width: 60%;
+}
+
+.info-text{
+  width: 40%;
+}
+
+.section2 .flex-section{
+  flex-direction: row-reverse;
 }
